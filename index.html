@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo à Santze</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Bem-vindo à Santze!</h1>
+    <img src="logo_santze.png" alt="Logo da Santze">
+    <p>Nós somos a Santze, uma empresa inovadora que oferece soluções personalizadas para seus clientes.</p>
+    <button onclick="mostrarMais()">Saiba mais sobre nós</button>
+    <p id="maisSobreNos" style="display: none;">A Santze está presente no mercado há 10 anos e possui uma equipe
+        altamente qualificada.</p>
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <input type="submit" value="Entre em contato">
+    </form>
+    <script>
+        function mostrarMais() {
+            var maisSobreNos = document.getElementById("maisSobreNos");
+            if (maisSobreNos.style.display === "none") {
+                maisSobreNos.style.display = "block";
+            } else {
+                maisSobreNos.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
